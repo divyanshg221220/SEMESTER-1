@@ -4,17 +4,18 @@ int main() {
     char name[70];
     char university[60];
     int age, enrollment_no;
-    printf("Enter your name: ");
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    printf("Enter your enrollment number: ");
-    scanf("%d", &enrollment_no);
-    printf("Enter your university name: ");
-
-    printf("\nName: %s", name);
-    printf("Age: %d\n", age);
-    printf("Enrollment No: %d\n", enrollment_no);
-    printf("University Name: %s", university);
-
+    printf("Enter Name : \n");
+    scanf("%[^\n]",name);
+    printf("Enter University Name : \n");
+    scanf("%[^\n]",university);
+    printf("Enter Age : \n");
+    scanf("%d",&age);
+    printf("Enter Enrollment No : \n");
+    scanf("%d",&enrollment_no);
+    printf("\nStudent Details\n");
+    printf("Name : %s\n", name);
+    printf("Age : %d\n", age);
+    printf("Enrollment No : %d\n", enrollment_no);
+    printf("University Name : %s", university);
     return 0;
 }
