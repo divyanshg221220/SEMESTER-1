@@ -6,6 +6,7 @@ int main() {
     int age, enrollment_no;
     printf("Enter Name : \n");
     scanf("%[^\n]",name);
+    getchar();
     printf("Enter University Name : \n");
     scanf("%[^\n]",university);
     printf("Enter Age : \n");
