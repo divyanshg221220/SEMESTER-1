@@ -1,17 +1,17 @@
-// WAP  to print name, age, enrollment no & University name
+// To print student's name, age, enrollment no. & university's name.
 #include <stdio.h>
 int main() {
     char name[70];
     char university[60];
     int age, enrollment_no;
-    printf("Enter Name : \n");
-    scanf(" %[^\n]",name);
-    printf("Enter University Name : \n");
-    scanf(" %[^\n]",university);
-    printf("Enter Age : \n");
+    printf("Enter Name :");
+    scanf(" %[^\n]",&name);
+    printf("Enter Age :");
     scanf("%d",&age);
-    printf("Enter Enrollment No : \n");
+    printf("Enter Enrollment No :");
     scanf("%d",&enrollment_no);
+    printf("Enter University Name :");
+    scanf(" %[^\n]",university);
     printf("\nStudent Details\n");
     printf("Name : %s\n", name);
     printf("Age : %d\n", age);
