@@ -13,27 +13,27 @@ int main() {
         return 0;
     }
     if(q==1) {
-        int a, b, temp;
+        int a,b,temp;
         printf("Enter first number: ");
-        scanf("%d", &a);
+        scanf("%d",&a);
         printf("Enter second number: ");
-        scanf("%d", &b);
-        temp = a;
-        a = b;
-        b = temp;
-        printf("First number : %d\nSecond number : %d", a, b);
+        scanf("%d",&b);
+        temp=a;
+        a=b;
+        b=temp;
+        printf("First number : %d\nSecond number : %d",a,b);
         return 0;
     }
     if (q==2) {
-        int a, b;
+        int a,b;
         printf("Enter first number: ");
-        scanf("%d", &a);
+        scanf("%d",&a);
         printf("Enter second number: ");
-        scanf("%d", &b);
-        a = a + b;
-        b = a - b;
-        a = a - b;
-        printf("First number : %d\nSecond number : %d", a, b);
+        scanf("%d",&b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        printf("First number : %d\nSecond number : %d",a,b);
         return 0;
     }
 }
