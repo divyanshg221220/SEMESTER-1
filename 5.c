@@ -1,6 +1,6 @@
 // Find Simple and Compound Interest
-//     SI=(P * R * T)/100
-//     CI=P*pow((1+R/100),T)-P
+//     SI=(P * R * T)/100;
+//     CI=P*pow((1+R/100),T)-P;
 #include <stdio.h>
 #include <math.h>
 int main() {
