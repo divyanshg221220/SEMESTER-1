@@ -15,7 +15,7 @@ int main() {
     printf("\nStudent Details\n");
     printf("Name : %s\n", name);
     printf("Age : %d\n", age);
-    printf("Enrollment No : %d\n", enrollment_no);
-    printf("University Name : %s", university);
+    printf("Enrollment No : %d\n",enrollment_no);
+    printf("University Name : %s",university);
     return 0;
 }
