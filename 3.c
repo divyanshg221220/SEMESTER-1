@@ -1,6 +1,6 @@
 // WAP  to print name, age, enrollment no & University name
-#include <stdio.h>
-int main() {
+int main(int argc, char const *argv[])
+{
     char name[70];
     char university[60];
     int age, enrollment_no;

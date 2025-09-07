@@ -1,6 +1,6 @@
 // To print student's name, age, enrollment no. & university's name.
-#include <stdio.h>
-int main() {
+int main(int argc, char const *argv[])
+{
     char name[70];
     char university[60];
     int age, enrollment_no;

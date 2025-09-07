@@ -1,9 +1,10 @@
 // Find Simple and Compound Interest
 //     SI=(P * R * T)/100;
 //     CI=P*pow((1+R/100),T)-P;
-#include <stdio.h>
-#include <math.h>
-int main() {
+# include <stdio.h>
+# include <math.h>
+int main(int argc, char const *argv[])
+{
     float p,r,t,si,ci;
     printf("Enter Principal Amount : ");
     scanf("%f",&p);
