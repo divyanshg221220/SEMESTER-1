@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
     }
     else
     {
-    printf("Invalid Input");
+        printf("Invalid Input");
     }
     return 0;
 }

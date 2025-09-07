@@ -11,25 +11,25 @@ int main(int argc, char const *argv[])
     scanf("%d",&q);
     if (q==1)
     {
-    printf("Enter first number: ");
-    scanf("%d",&a);
-    printf("Enter second number: ");
-    scanf("%d",&b);
-    temp=a;
-    a=b;
-    b=temp;
-    printf("First number : %d\nSecond number : %d",a,b);
+        printf("Enter first number: ");
+        scanf("%d",&a);
+        printf("Enter second number: ");
+        scanf("%d",&b);
+        temp=a;
+        a=b;
+        b=temp;
+        printf("First number : %d\nSecond number : %d",a,b);
     }
     else if (q==2)
     {
-    printf("Enter first number: ");
-    scanf("%d",&a);
-    printf("Enter second number: ");
-    scanf("%d",&b);
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    printf("First number : %d\nSecond number : %d",a,b);
+        printf("Enter first number: ");
+        scanf("%d",&a);
+        printf("Enter second number: ");
+        scanf("%d",&b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        printf("First number : %d\nSecond number : %d",a,b);
     }
     else
     {
