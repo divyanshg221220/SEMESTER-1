@@ -2,7 +2,7 @@
 num=int(input("Enter a number: "))
 sum=0
 for i in str(num):
-    sum+=int(i)**len(str(num))
+    sum+=int(i)**3
 if num==sum:
     print(num,"is an Armstrong number")
 else:
