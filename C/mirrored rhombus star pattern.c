@@ -1,4 +1,13 @@
 // MIRRORED RHOMBUS STAR PATTERN
+// *********
+//  *********
+//   *********
+//    *********
+//     *********
+//      *********
+//       *********
+//        *********
+//         *********
 int main(int argc, char const *argv[])
 {
     printf("Enter the number of rows/columns you want to print: ");
