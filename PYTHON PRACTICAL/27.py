@@ -10,4 +10,3 @@ for i in range(row):
     l.append(temp)
 arr=np.array(l)
 print("Array:",arr)
-
