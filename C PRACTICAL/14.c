@@ -1,4 +1,5 @@
 // Write a program to display the day of the week (1->Monday, ..., 7->Sunday).
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int q;

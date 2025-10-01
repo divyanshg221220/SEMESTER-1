@@ -1,4 +1,5 @@
 // Write a program to make a simple calculator using switch (Add, Subtract, Multiply, Divide).
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int q,a,b;

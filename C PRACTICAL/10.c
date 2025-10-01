@@ -1,4 +1,5 @@
 // Write a C program to find if a number is negative, positive or zero using if...else statement
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int n;

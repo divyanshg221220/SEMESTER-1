@@ -1,4 +1,5 @@
 // WAP to calculate sum of 2 no's
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int a,b,c;

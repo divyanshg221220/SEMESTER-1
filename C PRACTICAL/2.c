@@ -1,6 +1,7 @@
 // WAP to swap 2 no.'s 
 // i) Using temp
 // ii) Without temp.
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int q,a,b,temp;

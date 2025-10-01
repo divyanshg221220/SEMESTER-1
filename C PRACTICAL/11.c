@@ -1,4 +1,5 @@
 // Write a program to find the largest of three numbers.
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int a,b,c;

@@ -1,6 +1,7 @@
 // Swapping the values of two variables
 // i. Using third variable
 // ii. Without using third variable
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int q;

@@ -1,6 +1,7 @@
 // Using Conditional (Terenary) Operator -
 // i. Write a program to check whether a number is even or odd
 // ii. Write a program to check whether a character is uppercase or lowercase
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int q;

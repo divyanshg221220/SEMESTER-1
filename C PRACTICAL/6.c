@@ -1,6 +1,7 @@
 // Convert Celsius to Fahrenheit and Fahrenheit to Celsius (take value till 2 decimal places)
 //    f=(c*9/5)+32;
 //    c=(f-32)*5/9;
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     float q,c,f;
