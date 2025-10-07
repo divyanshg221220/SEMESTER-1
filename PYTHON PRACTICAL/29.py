@@ -1,4 +1,4 @@
-# Using pandas create a dataframe initialize it with the content such as your enrollment number and name and display them.
+# Using Panda, create a DataFrame, initialize it with the contents such as : your  Enrollment Number and Name and display them.
 import pandas as pd
 enrollment_number=[]
 name=[]

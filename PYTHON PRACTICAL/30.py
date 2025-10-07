@@ -1,4 +1,4 @@
-# Create two array using matplotlib plot the graph to the content of the two arrays with cooridinates ploting on x-axis and y-axis.
+# Create 2 array, using the MatPlotLib, plot the graph with the content of the two array, with coordinates plotting on X axis and Y axis.
 import numpy as np
 import matplotlib.pyplot as plt
 x=np.array(eval(input("Enter elements for x-axis (in list format): ")))
