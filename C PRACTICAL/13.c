@@ -2,14 +2,15 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int q,a,b;
-    printf("Enter 1 for Addition\n");
-    printf("Enter 2 for Subtraction\n");
-    printf("Enter 3 for Multiplication\n");
-    printf("Enter 4 for Division\n");
+    int a,b;
+    char q;
+    printf("Enter + for Addition\n");
+    printf("Enter - for Subtraction\n");
+    printf("Enter * for Multiplication\n");
+    printf("Enter / for Division\n");
     printf("Enter your choice : ");
-    scanf("%d",&q);
-    if (q==1||q==2||q==3||q==4)
+    scanf("%s",&q);
+    if (q=='+'||q=='-'||q=='*'||q=='/')
     {
         printf("Enter first numbers : ");
         scanf("%d",&a);
@@ -17,16 +18,16 @@ int main(int argc, char const *argv[])
         scanf("%d",&b);
         switch (q)
         {
-        case 1:
+        case '+':
             printf("Addition is %d\n",a+b);
             break;
-        case 2:
+        case '-':
             printf("Subtraction is %d\n",a-b);
             break;
-        case 3:
+        case '*':
             printf("Multiplication is %d\n",a*b);
             break;
-        case 4:
+        case '/':
             if(b!=0){
                 printf("Division is %d\n",a/b);
             }
@@ -36,7 +37,8 @@ int main(int argc, char const *argv[])
             break;
         }
     }
-    else{
+    else
+    {
         printf("Invalid Input\n");
     }
     return 0;

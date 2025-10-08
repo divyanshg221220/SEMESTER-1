@@ -1,4 +1,4 @@
-// Input radius, compute are, diameter, & circumference of circle and display.
+// Input radius, compute area, diameter, & circumference of circle and display.
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
