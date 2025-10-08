@@ -1,5 +1,5 @@
 // Write a program to print the first n terms of the Fibonacci series using a loop.
-# include <stdio.h>
+#include <stdio.h>
 int main(int argc, char const *argv[])
 {
     int a=0,b=1,n;
