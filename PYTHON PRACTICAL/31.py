@@ -1,12 +1,7 @@
-1. Create a .csv file(with contents like : Age, Weight and BMI). Read the content of the file and using Panda and MatPlotLib, plot the graph.
-2. Create a .csv file(with contents like : Age, Weight and BMI). Read the
-       content of the file and using Panda and MatPlotLib, plot the histogram
-3.  Write a Program to create a class called ‘Student’ with fields such as :
-  Enrollment Number, USS Name, Branch Name, Student Name etc. Instantiate a class and make a call to user defined function to display the
- details of students.
-4 Define Employee Class with fields such as Employee ID and Employee
- Name. Instantiate the class, invoke the constructor and make a call to user
- defined function to display the information about employee.
+# 1. Create a .csv file(with contents like : Age, Weight and BMI). Read the content of the file and using Panda and MatPlotLib, plot the graph.
+# 2. Create a .csv file(with contents like : Age, Weight and BMI). Read the content of the file and using Panda and MatPlotLib, plot the histogram
+# 3.  Write a Program to create a class called ‘Student’ with fields such as : Enrollment Number, USS Name, Branch Name, Student Name etc. Instantiate a class and make a call to user defined function to display the details of students.
+# 4 Define Employee Class with fields such as Employee ID and Employee Name. Instantiate the class, invoke the constructor and make a call to user defined function to display the information about employee.
 # Define the Student class
 class Student:
     # Constructor to initialize student details
