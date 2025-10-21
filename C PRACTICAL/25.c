@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
-    isPrime(n)?printf("%d is a prime number\n",n):printf("%d is not a prime number\n",n);
+    isPrime(n)?printf("%d is a prime number.",n):printf("%d is not a prime number.",n);
     return 0;
 }
 int isPrime(int n)
