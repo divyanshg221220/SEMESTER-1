@@ -1,7 +1,7 @@
 // Write a function to swap two numbers using call by value and call by reference.
 #include <stdio.h>
-void swapByValue(int a, int b);
-void swapByReference(int *a, int *b);
+void swapByValue(int a,int b);
+void swapByReference(int *a,int *b);
 int main(int argc, char const *argv[])
 {
     int q,a,b;
@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
-void swapByValue(int a, int b)
+void swapByValue(int a,int b)
 {
     int temp=a;
     a=b;
@@ -32,7 +32,7 @@ void swapByValue(int a, int b)
     printf("First number: %d\nSecond number: %d",a,b);
 
 }
-void swapByReference(int *a, int *b)
+void swapByReference(int *a,int *b)
 {
     int temp=*a;
     *a=*b;
