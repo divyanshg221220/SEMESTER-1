@@ -11,7 +11,7 @@ int write(char filename[100])
         return 1;
     }
     char text;
-    for (int i=65;i<91;i++)
+    for (int i=65;i<=90;i++)
     {
         fputc(text=i,fptr);
     } 
