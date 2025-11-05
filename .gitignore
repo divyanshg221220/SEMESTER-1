@@ -1,0 +1,9 @@
+# C/C++ build outputs
+*.exe
+*.out
+
+# IDE files
+.vscode/
+
+# Project specific
+.sample.txt
