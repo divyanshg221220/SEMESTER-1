@@ -1,6 +1,14 @@
+# C/C++ build outputs
 *.exe
 *.out
+*.o
+
+# IDE files
 .vscode/
+
+# Git files
 .git/
 .gitattributes
+
+# Project specific
 .sample.txt
