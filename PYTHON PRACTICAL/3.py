@@ -1,2 +1,3 @@
-# WAP that recieve I/P from user and calculate Area of Square
-print("Area of Square : ",int(input("Enter side : "))**2)
+# Write a Program that receive a number as input from user and returns if it odd or even number.
+def odd_even(n): return "Even" if n%2==0 else "Odd"
+print(odd_even(n=int(input("Enter a number : "))))

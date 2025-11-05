@@ -1,4 +1,10 @@
-# Using Filter function, write a program to display multiple of 5 from a given array.
-l=eval(input("Enter a list of numbers: "))
-filtered_numbers=list(filter(lambda x:x%5==0, l))
-print("Filtered numbers (multiple of 5):", filtered_numbers)
+# Using Panda, create a DataFrame, initialize it with the contents such as : your  Enrollment Number and Name and display them.
+import pandas as pd
+enrollment_number=[]
+name=[]
+for i in range(int(input("Enter number of entries: "))):
+    enrollment_number.append(int(input("Enter your enrollment number: ")))
+    name.append(input("Enter your name: "))
+data={'Enrollment Number':enrollment_number,'Name':name}
+df=pd.DataFrame(data)
+print(df)

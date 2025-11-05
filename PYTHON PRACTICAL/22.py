@@ -1,3 +1,12 @@
-# Write a Program to create and display the content of the tuple. Initialize the tuple with the name of the cities. Display content of the tuple along with name/index positions of the cities.
-cities=eval(input("Enter the names of cities in tuple format : "))
-for index,city in enumerate(cities): print(f"City at index {index} is {city}")
+# Using NumPy, write a program to make 1 Dim Array, load it with numbers, and perform the operation of Iteration and Slicing on it.
+import numpy as np
+l=[]
+for i in range(int(input("Enter number of columns: "))):
+    l.append(int(input("Enter the number: ")))
+arr=np.array(l)
+print("Iterating through the array:")
+for i in arr:
+    print(i)
+s=int(input("Enter the starting index of slice: "))
+e=int(input("Enter the ending index of slice: "))
+print("Slicing the array:", arr[s:e+1])

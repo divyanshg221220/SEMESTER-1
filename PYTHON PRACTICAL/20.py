@@ -1,3 +1,5 @@
-# Write a Program to print a multiplication table of a given number
-n=int(input("Enter a number : "))
-for i in range(1,11): print(f"{n} x {i} = {n*i}")
+# Write a Program to create a file called “Input.txt”, perform the write/read operation in it with a string “Computer Science”.
+with open("Input.txt", "w") as f:
+    f.write("Computer Science")
+with open("Input.txt", "r") as f:
+    print(f.read())

@@ -1,14 +1,10 @@
-# Using NumPy, write a program to create Multi-Dim Array, load it with the numbers and display the content of it. 
+# Create 2 array, using the MatPlotLib, plot the graph with the content of the two array, with coordinates plotting on X axis and Y axis.
 import numpy as np
-shape=[]
-dim=int(input("Enter number of dimensions: "))
-total_elements=1
-for i in range(dim):
-    n=int(input(f"Enter size for dimension {i+1}: "))
-    shape.append(n)
-    total_elements*=n
-l=[]
-for i in range(total_elements):
-    l.append(eval(input("Enter the element: ")))
-arr=np.array(l).reshape(shape)
-print("Array:\n",arr)
+import matplotlib.pyplot as plt
+x=np.array(eval(input("Enter elements for x-axis (in list format): ")))
+y=np.array(eval(input("Enter elements for y-axis (in list format): ")))
+plt.plot(x,y)
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('X vs Y plot')
+plt.show()

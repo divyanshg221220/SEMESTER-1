@@ -1,3 +1,4 @@
+# Define Employee Class with fields such as Employee ID and Employee Name. Instantiate the class, invoke the constructor and make a call to user defined function to display the information about employee.
 # Define a class called Employee
 class Employee:
     # Constructor to initialize employee details
