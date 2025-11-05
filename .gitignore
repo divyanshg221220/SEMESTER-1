@@ -8,6 +8,7 @@
 # Git files
 .git/
 .gitattributes
+.gitignore
 
 # Project specific
 .sample.txt
