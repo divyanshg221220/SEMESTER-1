@@ -22,7 +22,8 @@ int main(int argc, char const *argv[])
         scanf("%s",student[i].name);
         printf("Enter marks of student %d: ",i+1);
         scanf("%d",&student[i].marks);
-        if (student[i].marks>highest) {
+        if (student[i].marks>highest)
+        {
             highest=student[i].marks;
             highestIndex=i;
         }

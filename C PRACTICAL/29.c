@@ -7,21 +7,21 @@ struct students
 };
 int main(int argc, char const *argv[])
 {
-    struct students students[10];
+    struct students student[10];
     int highest=0;
     int highestIndex=0;
     for (int i=0;i<10;i++)
     {
         printf("Enter name of student %d: ",i+1);
-        scanf("%s", students[i].name);
+        scanf("%s", student[i].name);
         printf("Enter marks of student %d: ",i+1);
-        scanf("%d", &students[i].marks);
-        if (students[i].marks>highest)
+        scanf("%d", &student[i].marks);
+        if (student[i].marks>highest)
         {
-            highest=students[i].marks;
+            highest=student[i].marks;
             highestIndex=i;
         }
     }
-    printf("Student with highest marks: %s\n",students[highestIndex].name);
+    printf("Student with highest marks: %s\n",student[highestIndex].name);
     return 0;
 }
