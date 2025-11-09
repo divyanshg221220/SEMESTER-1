@@ -1,4 +1,4 @@
-// Write a program in c to read n number of values in an array and display them in reverse order
+// Write a program in c to read n number of values in an array and display them in reverse order.
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
