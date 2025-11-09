@@ -1,2 +1,2 @@
-# WAP that recieve I/P from user and calculate Area of Rectangle
-print("Area of Rectangle : ",int(input("Enter length : "))*int(input("Enter breadth : ")))
+# WAP to check if input string is palindrome or not.
+print("Palindrome" if (a:=input("Enter string : "))==a[::-1] else "Not palindrome")
