@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     printf("Enter * for Multiplication\n");
     printf("Enter / for Division\n");
     printf("Enter your choice : ");
-    scanf("%s",&q);
+    scanf("%c",&q);
     if (q=='+'||q=='-'||q=='*'||q=='/')
     {
         printf("Enter first numbers : ");
