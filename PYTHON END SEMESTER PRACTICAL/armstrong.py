@@ -3,6 +3,6 @@ sum=0
 for i in str(n):
     sum+=int(i)**len(str(n))
 if sum==n:
-    print(n,"is an Armstrong number")
+    print("Armstrong number")
 else:
-    print(n,"is not an Armstrong number")
+    print("Not Armstrong number")
