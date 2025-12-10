@@ -1,57 +1,54 @@
 // According to the Gregorian calendar, it was Monday on the date 01/01/1900. If any year is input through the keyboard write a program to find out what is the day on 1st January of this year.
 #include <stdio.h>
+
+int isLeapYear(int year)
+{
+    if (year % 400 == 0)
+        return 1;
+    if (year % 100 == 0)
+        return 0;
+    if (year % 4 == 0)
+        return 1;
+    return 0;
+}
+
 int main(int argc, char const *argv[])
 {
-    int year, day, leapYears = 0, normalYears = 0, totalDays;
+    int year, totalDays = 0;
+    char *days[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    
     printf("Enter year: ");   
     scanf("%d", &year);
-    if (year>1900)
+    
+    // Count total days from 1900 to the given year
+    if (year >= 1900)
     {
         for (int i = 1900; i < year; i++)
         {
-            if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
-                leapYears++;
+            if (isLeapYear(i))
+                totalDays += 366;
             else
-                normalYears++;
+                totalDays += 365;
         }
     }
-    else
+    else if (year < 1900)   
     {
-        for (int i = 1900 - 1; i >= year; i--)
+        for (int i = year; i < 1900; i++)
         {
-            if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
-                leapYears++;
+            if (isLeapYear(i))
+                totalDays += 366;
             else
-                normalYears++;
+                totalDays += 365;
         }
+        totalDays = -totalDays;  // Make it negative for years before 1900
     }
-    totalDays = (leapYears * 366) + (normalYears * 365);
-    day = totalDays % 7;
-    switch (day)
-    {
-    case 1:
-        printf("Monday\n");
-        break;
-    case 2:
-        printf("Tuesday\n");
-        break;
-    case 3:
-        printf("Wednesday\n");
-        break;
-    case 4:
-        printf("Thursday\n");
-        break;
-    case 5:
-        printf("Friday\n");
-        break;
-    case 6:
-        printf("Saturday\n");
-        break;
-    case 0:
-        printf("Sunday\n");
-        break;
-    default:
-        break;
-    }
+    
+    // Jan 1, 1900 was Monday (day 1)
+    // We need to find which day it was on Jan 1 of the given year
+    int dayIndex = (totalDays + 1) % 7;
+    if (dayIndex < 0)
+        dayIndex += 7;
+    
+    printf("%s\n", days[dayIndex]);
     return 0;
 }
