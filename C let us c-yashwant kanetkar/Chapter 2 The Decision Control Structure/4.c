@@ -28,29 +28,19 @@ int main(int argc, char const *argv[])
     int day = (totalDays + 1) % 7;
     if (day < 0)
         day += 7;
-    switch (day)
-    {
-    case 0:
+    if (day == 0)
         printf("Sunday\n");
-        break;
-    case 1:
+    else if (day == 1)
         printf("Monday\n");
-        break;
-    case 2:
+    else if (day == 2)
         printf("Tuesday\n");
-        break;
-    case 3:
+    else if (day == 3)
         printf("Wednesday\n");
-        break;
-    case 4:
+    else if (day == 4)
         printf("Thursday\n");
-        break;
-    case 5:
+    else if (day == 5)
         printf("Friday\n");
-        break;
-    case 6:
+    else if (day == 6)
         printf("Saturday\n");
-        break;
-    }
     return 0;
 }
