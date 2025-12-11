@@ -2,20 +2,20 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int cost_price,selling_price,profit,loss;
+    int cost_price, selling_price, profit, loss;
     printf("Enter Cost Price: ");
-    scanf("%d",&cost_price);
+    scanf("%d", &cost_price);
     printf("Enter Selling Price: ");
-    scanf("%d",&selling_price);
-    if (cost_price>selling_price)
+    scanf("%d", &selling_price);
+    if (cost_price > selling_price)
     {
-        loss=cost_price-selling_price;
-        printf("Loss: %d\n",loss);
+        loss = cost_price - selling_price;
+        printf("Loss: %d\n", loss);
     }
-    else if (selling_price>cost_price)
+    else if (selling_price > cost_price)
     {
-        profit=selling_price-cost_price;
-        printf("Profit: %d\n",profit);
+        profit = selling_price - cost_price;
+        printf("Profit: %d\n", profit);
     }
     else
     {

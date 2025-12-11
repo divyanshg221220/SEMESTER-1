@@ -13,6 +13,5 @@ int main(int argc, char const *argv[])
     {
         printf("not a leap year: %d\n", year);
     }
-    
     return 0;
 }

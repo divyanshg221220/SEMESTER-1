@@ -4,14 +4,14 @@ int main(int argc, char const *argv[])
 {
     int n;
     printf("Enter an integer: ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     if (n%2!=0)
     {
-        printf("Odd: %d\n",n);
+        printf("Odd: %d\n", n);
     }
     else
     {
-        printf("Even: %d\n",n);
+        printf("Even: %d\n", n);
     }
     return 0;
 }
