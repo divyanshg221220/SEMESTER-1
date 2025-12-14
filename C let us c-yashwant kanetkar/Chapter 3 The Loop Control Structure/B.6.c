@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 {
     int totalMatchsticks = 21, userPick, computerPick, turn = 1;
     printf("Welcome to the Matchstick Game!\n");
-    do
+    while (totalMatchsticks > 0)
     {
         printf("There are %d matchsticks left.\n", totalMatchsticks);
         printf("Pick 1, 2, 3, 4 matchsticks: ");
@@ -34,6 +34,6 @@ int main(int argc, char const *argv[])
             printf("computer picked the last matchstick. computer loses!\n");
             break;
         }
-    } while (totalMatchsticks > 0);
+    }
     return 0;
 }
