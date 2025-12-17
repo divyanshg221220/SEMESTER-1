@@ -10,16 +10,16 @@ int main(int argc, char const *argv[])
     if (cost_price > selling_price)
     {
         loss = cost_price - selling_price;
-        printf("Loss: %d\n", loss);
+        printf("loss: %d\n", loss);
     }
     else if (selling_price > cost_price)
     {
         profit = selling_price - cost_price;
-        printf("Profit: %d\n", profit);
+        printf("profit: %d\n", profit);
     }
     else
     {
-        printf("No Profit No Loss\n");
+        printf("no profit no loss\n");
     }
     return 0;
 }

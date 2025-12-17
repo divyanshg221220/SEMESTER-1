@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
     printf("Welcome to the Matchstick Game!\n");
     while (totalMatchsticks > 0)
     {
-        printf("There are %d matchsticks left.\n", totalMatchsticks);
+        printf("There are %d matchsticks left\n", totalMatchsticks);
         printf("Pick 1, 2, 3, 4 matchsticks: ");
         scanf("%d", &userPick);
         if (userPick < 1 || userPick > 4 || userPick > totalMatchsticks)
@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
         if (computerPick == 0)
             computerPick = 1;
         totalMatchsticks -= computerPick;
-        printf("Computer picks %d matchstick(s).\n", computerPick);
+        printf("Computer picks %d matchstick(s)\n", computerPick);
         if (totalMatchsticks < 1)
         {
             printf("computer picked the last matchstick. computer loses!\n");

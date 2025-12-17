@@ -41,11 +41,11 @@ int main(int argc, char const *argv[])
     scanf("%f", &y);
     if (isPointInTriangle(x1, y1, x2, y2, x3, y3, x, y))
     {
-        printf("Point P(%.2f, %.2f) lies inside the triangle ABC.\n", x, y);
+        printf("inside the triangle\n");
     }
     else
     {
-        printf("Point P(%.2f, %.2f) lies outside the triangle ABC.\n", x, y);
+        printf("outside the triangle\n");
     }
     return 0;
 }

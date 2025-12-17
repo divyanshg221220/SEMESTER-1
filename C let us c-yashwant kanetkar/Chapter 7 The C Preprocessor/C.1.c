@@ -16,27 +16,27 @@ main()
     scanf("%c", &c);
     if (IS_LOWER_CASE(c))
     {
-        printf("lower case letter.\n");
+        printf("lower case letter\n");
     }
     else
     {
-        printf("not a lower case letter.\n");
+        printf("not a lower case letter\n");
     }
     if (IS_UPPER_CASE(c))
     {
-        printf("upper case letter.\n");
+        printf("upper case letter\n");
     }
     else
     {
-        printf("not an upper case letter.\n");
+        printf("not an upper case letter\n");
     }
     if (IS_ALPHABET(c))
     {
-        printf("an alphabet.\n");
+        printf("an alphabet\n");
     }
     else
     {
-        printf("not an alphabet.\n");
+        printf("not an alphabet\n");
     }
     printf("Enter first number: ");
     scanf("%d", &a);

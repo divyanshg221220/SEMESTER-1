@@ -8,6 +8,6 @@ int sum(int n) {
 }
 int main(int argc, char const *argv[])
 {
-    printf("sum of first 25 natural numbers is %d\n", sum(25));
+    printf("sum: %d\n", sum(25));
     return 0;
 }

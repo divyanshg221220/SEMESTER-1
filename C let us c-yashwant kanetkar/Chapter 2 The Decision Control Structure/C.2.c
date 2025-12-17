@@ -7,11 +7,11 @@ int main(int argc, char const *argv[])
     scanf("%d", &n);
     if (n%2!=0)
     {
-        printf("Odd: %d\n", n);
+        printf("odd: %d\n", n);
     }
     else
     {
-        printf("Even: %d\n", n);
+        printf("even: %d\n", n);
     }
     return 0;
 }

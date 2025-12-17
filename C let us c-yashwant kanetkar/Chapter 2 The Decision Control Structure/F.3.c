@@ -21,23 +21,23 @@ int main(int argc, char const *argv[])
     {
         premium = 4;
         policyAmount = 200000;
-        printf("person should be insured.\npremium: Rs.%d per thousand\npolicy amount: Rs.%d\n", premium, policyAmount);
+        printf("person should be insured\npremium: Rs.%d per thousand\npolicy amount: Rs.%d\n", premium, policyAmount);
     }
     else if (health == 'E' && age >= 25 && age <= 35 && place == 'C' && gender == 'F')
     {
         premium = 3;
         policyAmount = 100000;
-        printf("person should be insured.\npremium: Rs.%d per thousand\npolicy amount: Rs.%d\n", premium, policyAmount);
+        printf("person should be insured\npremium: Rs.%d per thousand\npolicy amount: Rs.%d\n", premium, policyAmount);
     }
     else if (health == 'P' && age >= 25 && age <= 35 && place == 'V' && gender == 'M')
     {
         premium = 6;
         policyAmount = 10000;
-        printf("person should be insured.\npremium: Rs.%d per thousand\npolicy amount: Rs.%d\n", premium, policyAmount);
+        printf("person should be insured\npremium: Rs.%d per thousand\npolicy amount: Rs.%d\n", premium, policyAmount);
     }
     else
     {
-        printf("person should not be insured.\n");
+        printf("person should not be insured\n");
     }
     return 0;
 }

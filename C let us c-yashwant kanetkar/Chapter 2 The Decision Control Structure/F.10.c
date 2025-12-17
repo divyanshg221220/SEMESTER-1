@@ -20,11 +20,11 @@ int main(int argc, char const *argv[])
     }
     else if (credit == 'N')
     {
-        printf("do not supply. send him intimation.\n");
+        printf("do not supply. send him intimation\n");
     }
     else if (credit == 'O' && order > stock)
     {
-        printf("supply what is in stock. intimate to him that the balance will be shipped.\n");
+        printf("supply what is in stock. intimate to him that the balance will be shipped\n");
     }
     return 0;
 }

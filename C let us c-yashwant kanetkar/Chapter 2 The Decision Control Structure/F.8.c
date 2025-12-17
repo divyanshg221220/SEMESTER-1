@@ -7,19 +7,19 @@ int main(int argc, char const *argv[])
     scanf("%f", &time);
     if (time >= 2 && time < 3)
     {
-        printf("highly efficient.\n");
+        printf("highly efficient\n");
     }
     else if (time >= 3 && time < 4)
     {
-        printf("order to improve speed.\n");
+        printf("order to improve speed\n");
     }
     else if (time >= 4 && time < 5)
     {
-        printf("give training to improve his speed.\n");
+        printf("give training to improve his speed\n");
     }
     else if (time >= 5)
     {
-        printf("has to leave the company.\n");
+        printf("has to leave the company\n");
     }
     return 0;
 }
