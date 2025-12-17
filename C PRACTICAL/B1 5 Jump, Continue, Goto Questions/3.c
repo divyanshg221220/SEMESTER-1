@@ -14,6 +14,6 @@ int main(int argc, char const *argv[])
         printf("Number: %d\n",i);
     }
     negative:
-        printf("Negative number not allowed.\n");
+        printf("Negative number not allowed\n");
     return 0;
 }
