@@ -5,12 +5,12 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int num;
+    int n;
     printf("Enter a number: ");
-    scanf("%d", &num);
+    scanf("%d", &n);
     for (int i = 1; i <= 10; i++)
     {
-        printf("%d * %d = %d\n", num, i, num * i);
+        printf("%d * %d = %d\n", n, i, n * i);
     }
     return 0;
 }

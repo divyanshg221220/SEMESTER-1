@@ -2,23 +2,23 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int num = 1, originalNum, remainder, result;
+    int n = 1, originalNum, remainder, result;
     printf("Armstrong numbers between 1 and 500 are:\n");
-    while (num <= 500)
+    while (n <= 500)
     {
         result = 0;
-        originalNum = num;
+        originalNum = n;
         while (originalNum != 0)
         {
             remainder = originalNum % 10;
             result += remainder * remainder * remainder;
             originalNum /= 10;
         }
-        if (result == num)
+        if (result == n)
         {
-            printf("%d\n", num);
+            printf("%d\n", n);
         }
-        num++;
+        n++;
     }
     return 0;
 }

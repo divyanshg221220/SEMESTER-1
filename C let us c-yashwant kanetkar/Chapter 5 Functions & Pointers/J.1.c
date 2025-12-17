@@ -11,24 +11,26 @@ void sumOfDigits(int n, int *sum)
 }
 int main(int argc, char const *argv[])
 {
-    int q, num, sum = 0;
+    int q, n, sum = 0;
     printf("1. Without using recursion\n");
     printf("2. Using recursion\n");
     printf("Enter your choice : ");
     scanf("%d",&q);
-    printf("Enter a 5-digit positive integer: ");
-    scanf("%5d",&num);
     switch (q)
     {
     case 1:
+        printf("Enter a 5-digit positive integer: ");
+        scanf("%5d",&n);
         for (int i = 0; i < 5; i++)
         {
-            sum += num % 10;
-            num /= 10;
+            sum += n % 10;
+            n /= 10;
         }
         break;
     case 2:
-        sumOfDigits(num, &sum);
+        printf("Enter a 5-digit positive integer: ");
+        scanf("%5d",&n);
+        sumOfDigits(n, &sum);
         break;
     default:
         printf("Invalid Input\n");

@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     }
     for (int i = 0; i < 10; i++)
     {
-        a[i] = p[i] * pow(1 + ( r[i] / q[i] ), n[i] * q[i]);
+        a[i] = p[i] * pow(1 + (r[i] / q[i]), n[i] * q[i]);
         printf("amount %d: %.2f\n", i + 1, a[i]);
     }
     return 0;
