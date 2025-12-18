@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     {
         return 1;
     }
-    int width = 25, height = 80;
+    int width = csbi.dwSize.X, height = csbi.dwSize.Y;
     DWORD read;
     while (!kbhit())
     {
