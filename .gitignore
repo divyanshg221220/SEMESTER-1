@@ -53,4 +53,4 @@ dkms.conf
 
 .vscode/
 .sample.txt
-.pdf
+*.pdf
