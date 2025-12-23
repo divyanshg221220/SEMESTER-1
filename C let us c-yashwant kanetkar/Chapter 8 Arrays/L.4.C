@@ -75,25 +75,14 @@ void displayBoard(int board[4][4])
 }
 int checkWin(int board[4][4])
 {
-    int count = 1;
+    int winBoard[4][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 0}};
     for (int i = 0; i < 4; i++)
     {
         for (int j = 0; j < 4; j++)
         {
-            if (i == 3 && j == 3)
+            if (board[i][j] != winBoard[i][j])
             {
-                if (board[i][j] != 0)
-                {
-                    return 0;
-                }
-            }
-            else
-            {
-                if (board[i][j] != count)
-                {
-                    return 0;
-                }
-                count++;
+                return 0;
             }
         }
     }
@@ -114,10 +103,10 @@ int main(int argc, char const *argv[])
     hideCursor();
     int board[4][4] = {{1, 4, 15, 7}, {8, 10, 2, 11}, {14, 3, 6, 13}, {12, 9, 5, 0}};
     int moves = 0;
+    displayBoard(board);
+    printf("Moves: %d", moves);
     while (!checkWin(board))
     {
-        displayBoard(board);
-        printf("Moves: %d", moves);
         int key = getkey();
         int b = 0;
         switch (key)
@@ -217,6 +206,11 @@ int main(int argc, char const *argv[])
                 }
             }
             break;
+        }
+        if (b == 1)
+        {
+            displayBoard(board);
+            printf("Moves: %d", moves);
         }
     }
     displayBoard(board);
