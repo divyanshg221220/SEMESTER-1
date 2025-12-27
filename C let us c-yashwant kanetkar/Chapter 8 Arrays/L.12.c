@@ -24,6 +24,6 @@ int main(int argc, char const *argv[])
         }
     }
     float norm = sqrt(sum);
-    printf("norm: %f\n", norm);
+    printf("norm: %.2f\n", norm);
     return 0;
 }
