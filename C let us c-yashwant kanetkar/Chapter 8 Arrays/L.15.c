@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
         sum += pow(data[i] - mean, 2) / n;
     }
     stddev = sqrt(sum);
-    printf("mean: %f\n", mean);
     printf("standard deviation: %f\n", stddev);
+    printf("mean: %f\n", mean);
     return 0;
 }
