@@ -22,6 +22,6 @@ int main(int argc, char const *argv[])
             }
         }
     }
-    printf("Largest: %d\n", largest);
+    printf("largest: %d\n", largest);
     return 0;
 }

@@ -6,9 +6,9 @@ int main(int argc, char const *argv[])
     printf("Enter number of elements: ");
     scanf("%d", &n);
     int arr[n];
-    printf("Enter %d numbers:\n", n);
     for (int i = 0; i < n; i++)
     {
+        printf("Enter element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
     for (int i = 0; i < n / 2; i++)
