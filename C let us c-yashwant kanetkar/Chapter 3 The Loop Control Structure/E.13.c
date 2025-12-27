@@ -5,14 +5,13 @@
 #include <math.h>
 int main(int argc, char const *argv[])
 {
-    float x, sum = 0.0, term;
+    float x, sum = 0.0;
     printf("Enter the value of x: ");
     scanf("%f", &x);
     sum += (x - 1.0) / 2.0;
     for (int i = 2.0; i <= 7.0; i++)
     {
-        term = (1.0 / 2.0) * pow((x - 1.0) / x, i);
-        sum += term;
+        sum += (1.0 / 2.0) * pow((x - 1.0) / x, i);
     }
     printf("sum: %.2f\n", sum);
     return 0;
