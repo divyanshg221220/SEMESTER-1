@@ -12,14 +12,15 @@
 #include <math.h>
 int main(int argc, char const *argv[])
 {
-    float a1 = 137.4, a2 = 155.2, a3 = 149.3, a4 = 160.0, a5 = 155.6, a6 = 149.7, b1 = 80.9, b2 = 92.62, b3 = 97.93, b4 = 100.25, b5 = 68.95, b6 = 120.0, angle1 = 0.78, angle2 = 0.89, angle3 = 1.35, angle4 = 9.00, angle5 = 1.25, angle6 = 1.75, area1, area2, area3, area4, area5, area6;
-    area1 = 0.5 * a1 * b1 * sin(angle1);
-    area2 = 0.5 * a2 * b2 * sin(angle2);
-    area3 = 0.5 * a3 * b3 * sin(angle3);
-    area4 = 0.5 * a4 * b4 * sin(angle4);
-    area5 = 0.5 * a5 * b5 * sin(angle5);
-    area6 = 0.5 * a6 * b6 * sin(angle6);
-    float area[6] = {area1, area2, area3, area4, area5, area6};
+    float a[6] = {137.4, 155.2, 149.3, 160.0, 155.6, 149.7};
+    float b[6] = {80.9, 92.62, 97.93, 100.25, 68.95, 120.0};
+    float angle[6] = {0.78, 0.89, 1.35, 9.00, 1.25, 1.75};
+    float area[6];
+    for (int i = 0; i < 6; i++)
+    {
+        area[i] = 0.5 * a[i] * b[i] * sin(angle[i]);
+        printf("area %d: %.2f\n", i + 1, area[i]);
+    }
     float largest = area[0];
     for (int i = 1; i < 6; i++)
     {

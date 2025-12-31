@@ -1,5 +1,5 @@
 // If the lengths of the sides of a triangle are denoted by a, b, and c, then area of triangle is given by 
-// area=(S(S-a)(S-b)(S-c))^(1/2)
+// area=( S(S-a)(S-b)(S-c) ) ^ (1/2)
 // where, S = ( a + b + c ) / 2
 #include <stdio.h>
 #include <math.h>
