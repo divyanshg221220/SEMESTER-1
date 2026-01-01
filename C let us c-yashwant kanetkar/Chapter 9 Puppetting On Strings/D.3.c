@@ -5,8 +5,9 @@ int main(int argc, char const *argv[])
 {
     char str[100];
     printf("Enter a string: ");
-    scanf("%s", str);
+    gets(str);
     strupr(str);
-    printf("uppercase: %s\n", str);
+    printf("uppercase: ");
+    puts(str);
     return 0;
 }

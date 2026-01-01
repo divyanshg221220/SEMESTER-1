@@ -18,6 +18,7 @@ int main(int argc, char const *argv[])
         *dest++ = *src;
     }
     *dest = '\0';
-    printf("output: %s\n", substr);
+    printf("output: ");
+    puts(substr);
     return 0;
 }

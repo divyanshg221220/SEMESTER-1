@@ -20,6 +20,7 @@ int main(int argc, char const *argv[])
         strncpy(substr, str + pos, n);
         substr[n] = '\0';
     }
-    printf("substring: %s\n", substr);
+    printf("substring: ");
+    puts(substr);
     return 0;
 }
