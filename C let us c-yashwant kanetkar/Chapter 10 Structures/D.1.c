@@ -21,7 +21,7 @@ void joined_year(struct students s[])
     {
         if (s[i].year_of_joining == year)
         {
-            printf("Name: %s\n", s[i].name);
+            printf("name: %s\n", s[i].name);
         }
     }
 }
@@ -34,10 +34,10 @@ void roll_number(struct students s[])
     {
         if (s[i].roll_number == roll_number)
         {
-            printf("Name: %s\n", s[i].name);
-            printf("Department: %s\n", s[i].department);
-            printf("Course: %s\n", s[i].course);
-            printf("Year of joining: %d\n", s[i].year_of_joining);
+            printf("name: %s\n", s[i].name);
+            printf("department: %s\n", s[i].department);
+            printf("course: %s\n", s[i].course);
+            printf("year of joining: %d\n", s[i].year_of_joining);
         }
     }
 }
