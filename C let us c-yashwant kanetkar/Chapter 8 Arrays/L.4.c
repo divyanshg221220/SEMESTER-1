@@ -71,7 +71,6 @@ void displayBoard(int board[4][4])
         printf("\n");
         printf("+----+----+----+----+\n");
     }
-    return;
 }
 int checkWin(int board[4][4])
 {

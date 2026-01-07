@@ -14,7 +14,6 @@ void sumOfNaturalNumbers(int n,int sum)
     if (sum==n)
     {
         printf("Sum of first %d natural numbers is %d\n",n,sum);
-        return;
     }
     else
     {

@@ -10,7 +10,6 @@ void fibonacci(int n, int a, int b)
         count++;
         fibonacci(n, b, a + b);
     }
-    return;
 }
 int main(int argc, char const *argv[])
 {
