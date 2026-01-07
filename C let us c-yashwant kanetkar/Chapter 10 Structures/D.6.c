@@ -32,25 +32,24 @@ int main(int argc, char const *argv[])
         printf("7. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
+        static int n = 0;
         switch (choice)
         {
         case 1:
-            for (int i = 0; i < 10; i++)
-            {
-                printf("Enter accession number: ");
-                scanf("%d", &l[i].accession_number);
-                printf("Enter title: ");
-                scanf("%s", l[i].title);
-                printf("Enter author name: ");
-                scanf("%s", l[i].author_name);
-                printf("Enter price: ");
-                scanf("%f", &l[i].price);
-                printf("Enter flag: ");
-                scanf("%d", &l[i].flag);
-            }
+            printf("Enter accession number: ");
+            scanf("%d", &l[n].accession_number);
+            printf("Enter title: ");
+            scanf("%s", l[n].title);
+            printf("Enter author name: ");
+            scanf("%s", l[n].author_name);
+            printf("Enter price: ");
+            scanf("%f", &l[n].price);
+            printf("Enter flag: ");
+            scanf("%d", &l[n].flag);
+            n++;
             break;
         case 2:
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < n; i++)
             {
                 printf("accession number: %d\n", l[i].accession_number);
                 printf("title: %s\n", l[i].title);
@@ -64,7 +63,7 @@ int main(int argc, char const *argv[])
                 char author_name[50];
                 printf("Enter author name: ");
                 scanf("%s", author_name);
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < n; i++)
                 {
                     if (strcmp(l[i].author_name, author_name) == 0)
                     {
@@ -81,7 +80,7 @@ int main(int argc, char const *argv[])
                 int accession_number;
                 printf("Enter accession number: ");
                 scanf("%d", &accession_number);
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < n; i++)
                 {
                     if (l[i].accession_number == accession_number)
                     {
@@ -96,7 +95,7 @@ int main(int argc, char const *argv[])
         case 5:
             {
                 int count = 0;
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < n; i++)
                 {
                     if (l[i].flag == 0)
                     {
@@ -107,9 +106,9 @@ int main(int argc, char const *argv[])
                 break;
             }
         case 6:
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < n; i++)
             {
-                for (int j = i + 1; j < 10; j++)
+                for (int j = i + 1; j < n; j++)
                 {
                     if (l[i].accession_number > l[j].accession_number)
                     {
@@ -119,7 +118,7 @@ int main(int argc, char const *argv[])
                     }
                 }
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < n; i++)
             {
                 printf("accession number: %d\n", l[i].accession_number);
                 printf("title: %s\n", l[i].title);
