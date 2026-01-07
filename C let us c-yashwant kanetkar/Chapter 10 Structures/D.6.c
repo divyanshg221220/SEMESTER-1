@@ -8,6 +8,7 @@
 // 7. Exit 
 // Create a structure called library to hold accession number, title of the book, author name, price of the book, and flag indicating whether book is issued or not.
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 struct library
 {
@@ -20,7 +21,7 @@ struct library
 int main(int argc, char const *argv[])
 {
     int choice = 0;
-    struct library l[10];
+    struct library l[1];
     do
     {
         printf("1. Add book information\n");
@@ -36,6 +37,10 @@ int main(int argc, char const *argv[])
         switch (choice)
         {
         case 1:
+            if (n >= sizeof(l) / sizeof(l[0]))
+            {
+                realloc(l, (n + 1) * sizeof(l[0]));
+            }
             printf("Enter accession number: ");
             scanf("%d", &l[n].accession_number);
             printf("Enter title: ");
@@ -44,7 +49,7 @@ int main(int argc, char const *argv[])
             scanf("%s", l[n].author_name);
             printf("Enter price: ");
             scanf("%f", &l[n].price);
-            printf("Enter flag: ");
+            printf("Enter flag (0 for not issued, 1 for issued): ");
             scanf("%d", &l[n].flag);
             n++;
             break;
@@ -94,15 +99,7 @@ int main(int argc, char const *argv[])
             }
         case 5:
             {
-                int count = 0;
-                for (int i = 0; i < n; i++)
-                {
-                    if (l[i].flag == 0)
-                    {
-                        count++;
-                    }
-                }
-                printf("count: %d\n", count);
+                printf("count: %d\n", n);
                 break;
             }
         case 6:
