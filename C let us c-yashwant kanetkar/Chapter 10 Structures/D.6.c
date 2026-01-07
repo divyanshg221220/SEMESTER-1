@@ -20,7 +20,7 @@ struct library
 };
 int main(int argc, char const *argv[])
 {
-    int choice = 0;
+    int choice;
     struct library *l = (struct library *)malloc(sizeof(struct library));
     do
     {
