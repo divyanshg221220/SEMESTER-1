@@ -21,7 +21,7 @@ struct library
 int main(int argc, char const *argv[])
 {
     int choice = 0;
-    struct library l[1];
+    struct library *l = (struct library *)malloc(sizeof(struct library));
     do
     {
         printf("1. Add book information\n");
@@ -98,10 +98,8 @@ int main(int argc, char const *argv[])
                 break;
             }
         case 5:
-            {
-                printf("count: %d\n", n);
-                break;
-            }
+            printf("count: %d\n", n);
+            break;
         case 6:
             for (int i = 0; i < n; i++)
             {
@@ -125,6 +123,7 @@ int main(int argc, char const *argv[])
             }
             break;
         case 7:
+            free(l);
             printf("Exit\n");
             break;
         default:
