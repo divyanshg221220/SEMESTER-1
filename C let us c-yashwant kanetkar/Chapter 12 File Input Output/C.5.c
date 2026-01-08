@@ -1,6 +1,7 @@
-// Write a program to add the contents of one file at the end of another.
+// Write a program to copy one file to another. While doing so replace all lowercase characters to their equivalent uppercase characters.
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 int main(int argc, char const *argv[])
 {
     FILE *fptr1, *fptr2;
@@ -10,7 +11,7 @@ int main(int argc, char const *argv[])
     printf("Enter file name 2: ");
     scanf("%s", fname2);
     fptr1 = fopen(fname1, "r");
-    fptr2 = fopen(fname2, "a");
+    fptr2 = fopen(fname2, "w");
     if (fptr1 == NULL || fptr2 == NULL)
     {
         printf("error opening file");
@@ -20,7 +21,8 @@ int main(int argc, char const *argv[])
         char c;
         while ((c = fgetc(fptr1)) != EOF)
         {
-            fputc(c, fptr2);
+            fputc(toupper(c), fptr2);
+            
         }
         fclose(fptr1);
         fclose(fptr2);

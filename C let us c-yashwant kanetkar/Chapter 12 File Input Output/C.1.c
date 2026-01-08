@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
     FILE *fptr;
     char fname[10];
     printf("Enter file name: ");
-    scanf("%s", &fname);
+    scanf("%s", fname);
     fptr = fopen(fname, "r");
     if (fptr == NULL)
     {
