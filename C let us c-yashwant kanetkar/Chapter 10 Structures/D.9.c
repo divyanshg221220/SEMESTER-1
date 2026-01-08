@@ -70,7 +70,7 @@ int main(int argc, char const *argv[])
             printf("Exit\n");
             break;
         default:
-            printf("Invalid choice\n");
+            printf("Invalid Input\n");
             break;
         }
     } while (choice != 4);

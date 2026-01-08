@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
         scanf("%d", &userPick);
         if (userPick < 1 || userPick > 4 || userPick > totalMatchsticks)
         {
-            printf("Invalid input\n");
+            printf("Invalid Input\n");
             continue;
         }
         totalMatchsticks -= userPick;
