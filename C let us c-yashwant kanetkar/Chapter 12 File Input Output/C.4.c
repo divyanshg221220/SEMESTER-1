@@ -20,12 +20,12 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        char c[50];
+        char data1[15];
         struct student s[10];
         int i = 0;
-        while (fgets(c, sizeof(c), fptr) != NULL)
+        while (fgets(data1, sizeof(data1), fptr) != NULL)
         {
-            sscanf(c, "%s %d", s[i].name, &s[i].age);
+            sscanf(data1, "%s %d", s[i].name, &s[i].age);
             i++;
         }
         for (int j = 0; j < i; j++)
@@ -40,10 +40,12 @@ int main(int argc, char const *argv[])
                 }
             }
         }
+        char data2[15];
         printf("Name\tAge\n");
         for (int j = 0; j < i; j++)
         {
-            printf("%s\t%d\n", s[j].name, s[j].age);
+            sprintf(data2, "%s\t%d\n", s[j].name, s[j].age);
+            printf("%s", data2);
         }
         fclose(fptr);
     }
