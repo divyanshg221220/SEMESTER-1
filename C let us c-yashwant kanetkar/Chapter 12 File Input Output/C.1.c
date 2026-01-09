@@ -1,6 +1,5 @@
 // Write a program to read a file and display contents with its line numbers. 
 #include <stdio.h>
-#include <stdlib.h>
 int main(int argc, char const *argv[])
 {
     FILE *fptr;

@@ -1,6 +1,5 @@
 // Write a program to copy one file to another. While doing so replace all lowercase characters to their equivalent uppercase characters.
 #include <stdio.h>
-#include <stdlib.h>
 #include <ctype.h>
 int main(int argc, char const *argv[])
 {

@@ -1,6 +1,5 @@
 // Write a program to find the size of a text file without traversing it character by character.
 #include <stdio.h>
-#include <stdlib.h>
 int main(int argc, char const *argv[])
 {
     FILE *fptr;

@@ -4,7 +4,6 @@
 // (2) A substitution cipher: In this each character read from the source file is substituted by a corresponding predetermined character and this character is written to the target file. 
 // For example, if character ‘A’ is read from the source file, and if we have decided that every ‘A’ is to be substituted by ‘!’, then a ‘!’ would be written to the target file in place of every ‘A’ Similarly, every ‘B’ would be substituted by ‘5’ and so on. 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 void encrypt_offset_cipher()
 {

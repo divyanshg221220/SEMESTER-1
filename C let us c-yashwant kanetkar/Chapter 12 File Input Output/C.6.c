@@ -1,6 +1,5 @@
 // Write a program that merges lines alternately from two files and writes the results to new file. If one file has less number of lines than the other, the remaining lines from the larger file should be simply copied into the target file. 
 #include <stdio.h>
-#include <stdlib.h>
 int main(int argc, char const *argv[])
 {
     FILE *fptr1, *fptr2, *fptr3;

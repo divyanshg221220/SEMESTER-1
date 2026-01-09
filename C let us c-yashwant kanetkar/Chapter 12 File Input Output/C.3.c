@@ -1,6 +1,5 @@
 // Write a program to add the contents of one file at the end of another.
 #include <stdio.h>
-#include <stdlib.h>
 int main(int argc, char const *argv[])
 {
     FILE *fptr1, *fptr2;

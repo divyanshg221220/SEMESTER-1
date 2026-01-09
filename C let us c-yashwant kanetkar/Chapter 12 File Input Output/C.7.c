@@ -1,7 +1,6 @@
 // Write a program to display the contents of a text file on the screen. Make following provisions: 
 // Display the contents inside a box drawn with opposite corner co-ordinates being ( 0, 1 ) and ( 79, 23 ). Display the name of the file whose contents are being displayed, and the page numbers in the zeroth row. The moment one screenful of file has been displayed, flash a message ‘Press any key...’ in 24th row. When a key is hit, the next page’s contents should be displayed, and so on till the end of file.
 #include <stdio.h>
-#include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
 void gotoxy ( short col, short row )
