@@ -62,7 +62,7 @@ int main(int argc, char const *argv[])
                     }
                     if (i == 1)
                     {
-                        fseek(fptr1, -(long)sizeof(c), SEEK_CUR);
+                        fseek(fptr1, -(int)sizeof(c), SEEK_CUR);
                         fwrite(&c, sizeof(c), 1, fptr1);
                         fflush(fptr1);
                     }
