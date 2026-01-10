@@ -19,7 +19,10 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        struct student s[10];
+        fseek(fptr, 0, SEEK_END);
+        int size = ftell(fptr);
+        struct student s[size / sizeof(struct student) + 1];
+        fseek(fptr, 0, SEEK_SET);
         char data[sizeof(s)];
         int i = 0;
         while (fgets(data, sizeof(data), fptr) != NULL)

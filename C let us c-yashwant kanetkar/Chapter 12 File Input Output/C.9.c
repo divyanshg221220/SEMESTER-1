@@ -16,16 +16,16 @@
 #include <stdio.h>
 struct customer
 {
-    int accno;
-    char name[30];
-    float balance;
-};
+    int accno ;
+    char name[30] ;
+    float balance ;
+} ;
 struct trans
 {
-    int accno;
-    char trans_type;
-    float amount;
-};
+    int accno ;
+    char trans_type ;
+    float amount ;
+} ;
 int main(int argc, char const *argv[])
 {
     FILE *fptr1, *fptr2;
@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
         struct trans t;
         while (fread(&t, sizeof(t), 1, fptr2) == 1)
         {
-            rewind(fptr1);
+            fseek(fptr1, 0, SEEK_SET);
             while (fread(&c, sizeof(c), 1, fptr1) == 1)
             {
                 if (c.accno == t.accno)
