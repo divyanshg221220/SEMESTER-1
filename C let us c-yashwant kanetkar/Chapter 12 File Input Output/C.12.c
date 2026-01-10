@@ -33,6 +33,7 @@ int main(int argc, char const *argv[])
             if (i == nth)
             {
                 printf("name of nth student: %s\n", name);
+                break;
             }
         }
         fseek(fptr, 0, SEEK_SET);
