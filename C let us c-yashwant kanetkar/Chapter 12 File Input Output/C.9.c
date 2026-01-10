@@ -28,10 +28,10 @@ struct trans
 } ;
 int main(int argc, char const *argv[])
 {
-    FILE *fptr1, *fptr2;
-    fptr1 = fopen("CUSTOMER.DAT", "rb+");
-    fptr2 = fopen("TRANSACTIONS.DAT", "rb");
-    if (fptr1 == NULL || fptr2 == NULL)
+    FILE *customer_fptr, *trans_fptr;
+    customer_fptr = fopen("CUSTOMER.DAT", "rb+");
+    trans_fptr = fopen("TRANSACTIONS.DAT", "rb");
+    if (customer_fptr == NULL || trans_fptr == NULL)
     {
         printf("error opening file");
     }
@@ -40,10 +40,10 @@ int main(int argc, char const *argv[])
         int i = 0;
         struct customer c;
         struct trans t;
-        while (fread(&t, sizeof(t), 1, fptr2) == 1)
+        while (fread(&t, sizeof(t), 1, trans_fptr) == 1)
         {
-            fseek(fptr1, 0, SEEK_SET);
-            while (fread(&c, sizeof(c), 1, fptr1) == 1)
+            fseek(customer_fptr, 0, SEEK_SET);
+            while (fread(&c, sizeof(c), 1, customer_fptr) == 1)
             {
                 if (c.accno == t.accno)
                 {
@@ -62,16 +62,16 @@ int main(int argc, char const *argv[])
                     }
                     if (i == 1)
                     {
-                        fseek(fptr1, -(int)sizeof(c), SEEK_CUR);
-                        fwrite(&c, sizeof(c), 1, fptr1);
-                        fflush(fptr1);
+                        fseek(customer_fptr, -(int)sizeof(c), SEEK_CUR);
+                        fwrite(&c, sizeof(c), 1, customer_fptr);
+                        fflush(customer_fptr);
                     }
                     break;
                 }
             }
         }
-        fclose(fptr1);
-        fclose(fptr2);
+        fclose(customer_fptr);
+        fclose(trans_fptr);
     }
     return 0;
 }
