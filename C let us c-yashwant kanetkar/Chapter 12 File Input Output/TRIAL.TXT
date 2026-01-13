@@ -1,2 +1,2 @@
 This is a sample text file used to test code.
-It has , and . and a new line.
+It has space comma , full-stop . and newline.
