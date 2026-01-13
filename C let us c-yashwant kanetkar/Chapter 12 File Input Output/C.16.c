@@ -44,11 +44,11 @@ int main(int argc, char const *argv[])
             i++;
         }
         printf("missing employee numbers:\n");
-        for (int i = 0; i < n; i++)
+        for (int k = 0; k < j; k++)
         {
-            if (missing[i] != 0)
+            if (missing[k] != 0)
             {
-                printf("%d\n", missing[i]);
+                printf("%d\n", missing[k]);
             }
         }
         fclose(fptr);
