@@ -31,13 +31,13 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int q, arr[25];
+    int choice, arr[25];
     printf("1. Selection sort\n");
     printf("2. Bubble sort\n");
     printf("3. Insertion sort\n");
     printf("Enter your choice : ");
-    scanf("%d",&q);
-    switch (q)
+    scanf("%d",&choice);
+    switch (choice)
     {
     case 1:
         printf("Enter 25 numbers: \n");

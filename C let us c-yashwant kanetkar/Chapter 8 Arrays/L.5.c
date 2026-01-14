@@ -6,14 +6,14 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int q;
-    printf("Write a program to add two 6 x 6 matrices.\n");
-    printf("Write a program to multiply any two 3 x 3 matrices.\n");
-    printf("Write a program to sort all the elements of a 4 x 4 matrix.\n");
-    printf("Write a program to obtain the determinant value of a 5 x 5 matrix.\n");
+    int choice;
+    printf("1. Write a program to add two 6 x 6 matrices.\n");
+    printf("2. Write a program to multiply any two 3 x 3 matrices.\n");
+    printf("3. Write a program to sort all the elements of a 4 x 4 matrix.\n");
+    printf("4. Write a program to obtain the determinant value of a 5 x 5 matrix.\n");
     printf("Enter your choice : ");
-    scanf("%d", &q);
-    switch (q)
+    scanf("%d", &choice);
+    switch (choice)
     {
     case 1:
         {
