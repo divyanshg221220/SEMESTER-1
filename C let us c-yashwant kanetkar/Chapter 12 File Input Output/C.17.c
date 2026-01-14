@@ -15,11 +15,11 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        char c[80];
+        char c[80], *word;
         int word_count = 0, four_letter_word_count = 0;
         while (fgets(c, sizeof(c), fptr) != NULL)
         {
-            char *word = strtok(c, " ,.\n");
+            word = strtok(c, " ,.\n");
             while (word != NULL)
             {
                 word_count++;
