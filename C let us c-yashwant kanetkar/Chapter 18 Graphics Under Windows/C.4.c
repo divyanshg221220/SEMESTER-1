@@ -3,6 +3,8 @@
 #include "helper.h"
 void OnDestroy(HWND);
 void OnPaint(HWND);
+static COLORREF Black = RGB(0, 0, 0);
+static COLORREF White = RGB(255, 255, 255);
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)
 {
     MSG m;
@@ -53,11 +55,11 @@ void OnPaint(HWND hWnd)
             {
                 if ((i + j) % 2 == 0)
                 {
-                    FillRect(hdc, &(RECT){j * box_width, i * box_height, (j + 1) * box_width, (i + 1) * box_height},CreateSolidBrush(RGB(255, 255, 255)));
+                    FillRect(hdc, &(RECT){j * box_width, i * box_height, (j + 1) * box_width, (i + 1) * box_height},CreateSolidBrush(White));
                 }
                 else
                 {
-                    FillRect(hdc, &(RECT){j * box_width, i * box_height, (j + 1) * box_width, (i + 1) * box_height},CreateSolidBrush(RGB(0, 0, 0)));
+                    FillRect(hdc, &(RECT){j * box_width, i * box_height, (j + 1) * box_width, (i + 1) * box_height},CreateSolidBrush(Black));
                 }
             }
         }

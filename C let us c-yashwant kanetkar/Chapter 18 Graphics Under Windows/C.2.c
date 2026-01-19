@@ -6,6 +6,7 @@ void OnLeftClick(HWND, LPARAM);
 void OnDestroy(HWND);
 void OnPaint(HWND);
 static COLORREF lineColor = RGB(0, 0, 0);
+static COLORREF backgroundColor = RGB(255, 255, 255);
 struct click_data
 {
     int x1;
@@ -73,6 +74,7 @@ void OnPaint(HWND hWnd)
     HBRUSH hbr;
     HGDIOBJ holdbr;
     hdc = BeginPaint(hWnd, &ps);
+    SetBkMode(hdc, backgroundColor);
     hbr = CreateSolidBrush(lineColor);
     holdbr = SelectObject(hdc, hbr);
     int index = click_count / 2;
