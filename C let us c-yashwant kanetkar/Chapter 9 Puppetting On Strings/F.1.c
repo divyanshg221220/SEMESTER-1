@@ -23,26 +23,20 @@ int main(int argc, char const *argv[])
                    };
     char str1[100], str2[100];
     printf("Enter a old string: ");
-    gets(str1);
+    scanf("%s", str1);
     printf("Enter a new string: ");
-    gets(str2);
-    for (char **ptr = str; *ptr != NULL; ptr++)
+    scanf("%s", str2);
+    int count = sizeof(str) / sizeof(str[0]);
+    for (int i = 0; i < count; i++)
     {
-        if (strstr(*ptr, str1) != NULL)
+        if (strstr(str[i], str1) != NULL)
         {
-            for (int i = 0; i < strlen(*ptr); i++)
-            {
-                if ((*ptr)[i] == str1[i])
-                {
-                    (*ptr)[i] = str2[i];
-                }
-            }
+            strcpy(str[i], str2);
         }
     }
-    printf("string: \n");
-    for (char **ptr = str; *ptr != NULL; ptr++)
+    for (int i = 0; i < count; i++)
     {
-        printf("%s\n", *ptr);
+        printf("%s\n", str[i]);
     }
     return 0;
 }
