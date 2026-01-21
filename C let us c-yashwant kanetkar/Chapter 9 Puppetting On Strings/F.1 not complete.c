@@ -26,17 +26,17 @@ int main(int argc, char const *argv[])
     scanf("%s", str1);
     printf("Enter a new string: ");
     scanf("%s", str2);
-    int count = sizeof(str) / sizeof(str[0]);
-    for (int i = 0; i < count; i++)
+    char *word;
+    while (fgets(, sizeof(c), str) != NULL)
     {
-        if (strstr(str[i], str1) != NULL)
+        word = strtok(c, " ");
+        while (word != NULL)
         {
-            strcpy(str[i], str2);
-        }
-    }
-    for (int i = 0; i < count; i++)
-    {
-        printf("%s\n", str[i]);
-    }
+            if (strcmp(word, str1) == 0)
+            {
+                
+            }
+            
+    
     return 0;
 }
