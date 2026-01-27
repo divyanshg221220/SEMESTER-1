@@ -18,10 +18,10 @@ int main(int argc, char const *argv[])
     else
     {
         int i = 0;
-        char c[10][10], *word;
-        while (fgets(c[i], sizeof(c), fptr) != NULL)
+        char c[50], *word;
+        while (fgets(c, sizeof(c), fptr) != NULL)
         {
-            word = strtok(c[i], " \n");
+            word = strtok(c, " \n");
             while (word != NULL)
             {
                 printf("%s", strrev(word));
