@@ -10,7 +10,6 @@
 // For example if str1 contains "mountain" and str2 contains "car", then the second string in str should get changed to "Move a car". 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 int main(int argc, char const *argv[])
 {
     char *str[ ] = {  
