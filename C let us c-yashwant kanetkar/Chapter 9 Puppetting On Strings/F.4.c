@@ -113,7 +113,7 @@ int main(int argc, char const *argv[])
     for (int i = 1; i <= daysInMonth[month - 1]; i++)
     {
         printf(" %2d ", i);
-        if (j == 7)
+        if (i != daysInMonth[month - 1] && j == 7)
         {
             printf("| |\n| |");
             j = 1;
@@ -123,8 +123,12 @@ int main(int argc, char const *argv[])
             j++;
         }
     }
-    for (int i = 0; i < daysInMonth[month - 1] % 7 - day + 1; i++)
+    for (j; j <= 7; j++)
     {
+        if (j == 1)
+        {
+            break;
+        }
         printf("    ");
     }
     printf("| |\n");
