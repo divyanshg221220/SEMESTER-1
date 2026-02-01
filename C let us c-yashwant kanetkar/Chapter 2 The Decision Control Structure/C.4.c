@@ -10,9 +10,13 @@ int main(int argc, char const *argv[])
         for (int i = 1900; i < year; i++)
         {
             if ((i % 400 == 0) || (i % 4 == 0 && i % 100 != 0))
+            {
                 totalDays += 366;
+            }
             else
+            {
                 totalDays += 365;
+            }
         }
     }
     else if (year < 1900)   
@@ -20,27 +24,47 @@ int main(int argc, char const *argv[])
         for (int i = year; i < 1900; i++)
         {
             if ((i % 400 == 0) || (i % 4 == 0 && i % 100 != 0))
+            {    
                 totalDays -= 366;
+            }
             else
+            {
                 totalDays -= 365;
+            }
         }
     }
     int day = (totalDays + 1) % 7;
     if (day < 0)
+    {
         day += 7;
+    }
     if (day == 0)
+    {
         printf("Sunday\n");
+    }
     else if (day == 1)
+    {
         printf("Monday\n");
+    }
     else if (day == 2)
+    {
         printf("Tuesday\n");
+    }
     else if (day == 3)
+    {
         printf("Wednesday\n");
+    }
     else if (day == 4)
+    {
         printf("Thursday\n");
+    }
     else if (day == 5)
+    {
         printf("Friday\n");
+    }
     else if (day == 6)
+    {
         printf("Saturday\n");
+    }
     return 0;
 }
