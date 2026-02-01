@@ -21,22 +21,37 @@ int main(int argc, char const *argv[])
                     "Make a million",  
                     "...all through C!"  
                    };
-    char str1[100], str2[100];
-    printf("Enter a old string: ");
+    char str1[25], str2[25];
+    printf("Enter old string: ");
     scanf("%s", str1);
-    printf("Enter a new string: ");
+    printf("Enter new string: ");
     scanf("%s", str2);
-    char *word;
-    while (fgets(, sizeof(c), str) != NULL)
+    int n_line = sizeof(str) / sizeof(str[0]);
+    char temp[n_line][100];
+    for (int i = 0; i < n_line; i++)
     {
-        word = strtok(c, " ");
+        char line[100];
+        strcpy(line, str[i]);
+        char *word = strtok(line, " ");
+        strcpy(temp[i], "");
         while (word != NULL)
         {
             if (strcmp(word, str1) == 0)
             {
-                
+                strcat(temp[i], str2);
             }
-            
-    
+            else
+            {
+                strcat(temp[i], word);
+            }
+            strcat(temp[i], " ");
+            word = strtok(NULL, " ");
+        }
+        str[i] = temp[i];
+    }
+    for (int i = 0; i < n_line; i++)
+    {
+        printf("%s\n", str[i]);
+    }
     return 0;
 }
