@@ -30,8 +30,13 @@ int getkey( )
 #define DOWN 80
 #define LEFT 75
 #define RIGHT 77
+void clearScreen()
+{
+    system("cls");
+}
 void displayCalendar(int month, int year)
 {
+    clearScreen();
     gotoxy(0, 0);
     printf("\nPRESS ESC TO EXIT\n");
     int totalDays = 0;
