@@ -27,11 +27,11 @@ int main(int argc, char const *argv[])
         printf("Enter cost: ");
         scanf("%f", &inventory[i].cost);
     }
-    float totalvalue = 0;
+    float totalValue = 0;
     for (int i = 0; i < n; i++)
     {
-        totalvalue += inventory[i].cost;
+        totalValue += inventory[i].cost;
     }
-    printf("total inventory value: %.2f\n", totalvalue);
+    printf("total inventory values: %.2f\n", totalValue);
     return 0;
 }
