@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[])
 {
     char str1[25], str2[25], str3[25], str4[25];
-    printf("Enter a string of 4 words: ");
+    printf("Enter a string of four words: ");
     scanf ( "%s%s%s%s", str1, str2, str3, str4 ) ;
     printf("str1: %s\n", str1);
     printf("str2: %s\n", str2);
