@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
             else
             {
                 printf("Retrieved left: %c\n", dequeue[*left]);
-                (*right--);
+                (*right)--;
                 for (int i = 0; i < *right; i++)
                 {
                     dequeue[i] = dequeue[i + 1];
@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
             }
             else
             {
-                (*right--);
+                (*right)--;
                 printf("Retrieved right: %c\n", dequeue[*right]);
                 dequeue[*right] = '.';
             }
@@ -70,7 +70,7 @@ int main(int argc, char const *argv[])
                 }
                 printf("Enter element to insert left: ");
                 scanf(" %c", &dequeue[*left]);
-                (*right++);
+                (*right)++;
             }
             break;
         case 4:
@@ -82,7 +82,7 @@ int main(int argc, char const *argv[])
             {
                 printf("Enter element to insert right: ");
                 scanf(" %c", &dequeue[*right]);
-                (*right++);
+                (*right)++;
             }
             break;
         case 5:
