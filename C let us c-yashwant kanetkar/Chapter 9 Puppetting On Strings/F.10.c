@@ -1,6 +1,5 @@
 // Write a program that takes a set of names of individuals and abbreviates the first, middle and other names except the last name by their first letter.
 #include <stdio.h>
-#include <string.h>
 int main(int argc, char const *argv[])
 {
     char name[4][25];
