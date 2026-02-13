@@ -5,19 +5,10 @@ int main(int argc, char const *argv[])
     int l = 1189, b = 841;
     for (int i = 0; i < 9; i++)
     {
-        printf("A%d: %d x %d\n", i, l, b);
-        if (l > b)
-        {
-            int temp = l;
-            l = b;
-            b = temp / 2;
-        }
-        else
-        {
-            int temp = b;
-            b = l;
-            l = temp / 2;
-        }
+        printf("A%d: %d mm x %d mm\n", i, l, b);
+        int temp = l;
+        l = b;
+        b = temp / 2;
     }
     return 0;
 }
