@@ -7,6 +7,10 @@ int main(int argc, char const *argv[])
     scanf("%d", &N);
     for (int i = 0; i < 6; i++)
     {
+        if (N == 0)
+        {
+            break;
+        }
         if (N >= currency[i])
         {
             count += N / currency[i];
