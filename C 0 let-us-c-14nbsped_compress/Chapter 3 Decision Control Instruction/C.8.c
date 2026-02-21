@@ -1,4 +1,4 @@
-// Find the absolute value of a number entered through the keyboard. 
+// Write a program to find the absolute value of a number entered through the keyboard. 
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char const *argv[])

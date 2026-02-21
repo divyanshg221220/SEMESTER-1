@@ -1,4 +1,4 @@
-// Given a point (x, y), write a program to find out if it lies on the x-axis, y-axis or at the origin, viz. (0, 0).
+// Given a point (x, y), write a program to find out if it lies on the X-axis, Y-axis or on the origin.
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {

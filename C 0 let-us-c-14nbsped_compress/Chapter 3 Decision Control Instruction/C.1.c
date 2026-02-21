@@ -2,22 +2,24 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int cp,sp;
-    printf("Enter cost price: ");
-    scanf("%d",&cp);
-    printf("Enter selling price: ");
-    scanf("%d",&sp);
-    if (cp < sp)
+    int cost_price, selling_price, profit, loss;
+    printf("Enter Cost Price: ");
+    scanf("%d", &cost_price);
+    printf("Enter Selling Price: ");
+    scanf("%d", &selling_price);
+    if (cost_price > selling_price)
     {
-        printf("profit: %d",sp-cp);
+        loss = cost_price - selling_price;
+        printf("loss: %d\n", loss);
     }
-    else if (cp > sp)
+    else if (selling_price > cost_price)
     {
-        printf("loss: %d",cp-sp);
+        profit = selling_price - cost_price;
+        printf("profit: %d\n", profit);
     }
     else
     {
-        printf("no profit no loss");
+        printf("no profit no loss\n");
     }
     return 0;
 }
