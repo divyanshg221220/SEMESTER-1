@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     char c;
     printf("Enter a character: ");
     scanf("%c", &c);
-    printf("Is it a lowercase alphabet? %s\n", (c >= 'a' && c <= 'z') ? "Yes" : "No");
-    printf("Is it a special symbol? %s\n", ((c >= 33 && c <= 47) || (c >= 58 && c <= 64) || (c >= 91 && c <= 96) || (c >= 123 && c <= 126)) ? "Yes" : "No");
+    printf("Is it a lowercase alphabet? %s\n", (c >= 'a' && c <= 'z') ? "yes" : "no");
+    printf("Is it a special symbol? %s\n", ((c >= 33 && c <= 47) || (c >= 58 && c <= 64) || (c >= 91 && c <= 96) || (c >= 123 && c <= 126)) ? "yes" : "no");
     return 0;
 }
