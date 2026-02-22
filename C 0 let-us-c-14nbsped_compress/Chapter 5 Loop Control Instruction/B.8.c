@@ -1,4 +1,4 @@
-// Write a program to find the octal equivalent of the entered number.
+// Write a program to receive an integer and find its octal equivalent. 
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
