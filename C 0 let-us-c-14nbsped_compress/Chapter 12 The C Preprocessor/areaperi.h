@@ -1,0 +1,6 @@
+#define AREA_OF_TRIANGLE(base, height)  ((base) * (height) / 2.0)
+#define PERIMETER_OF_TRIANGLE(side1, side2, side3)  ((side1) + (side2) + (side3))
+#define AREA_OF_SQUARE(side)  ((side) * (side))
+#define PERIMETER_OF_SQUARE(side)  (4 * (side))
+#define AREA_OF_CIRCLE(radius)  (3.14 * (radius) * (radius))
+#define PERIMETER_OF_CIRCLE(radius)  (2 * 3.14 * (radius))
