@@ -17,7 +17,7 @@ int gcd(int a, int b)
     }
     return a;
 }
-int main()
+int main(int argc, char const *argv[])
 {
     int J = 1980, K = 1617;
     printf("gcd (%d , %d): %d\n", J, K, gcd(J, K));

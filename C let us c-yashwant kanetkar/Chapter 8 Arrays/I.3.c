@@ -3,9 +3,9 @@
 int main(int argc, char const *argv[])
 {
     int arr[10], *ptr, smallest;
-    printf("Enter 10 numbers:\n");
     for (int i = 0; i < 10; i++)
     {
+        printf("Enter element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
     ptr = arr;

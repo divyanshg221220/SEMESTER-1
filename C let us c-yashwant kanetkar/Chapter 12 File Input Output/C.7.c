@@ -39,7 +39,7 @@ void printFooter()
     gotoxy(0, 24);
     printf("Press any key...");
 }
-int main() 
+int main(int argc, char const *argv[])
 {
     FILE *fptr;
     char fname[10];

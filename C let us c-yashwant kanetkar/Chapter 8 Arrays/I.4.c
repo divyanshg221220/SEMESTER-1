@@ -11,12 +11,12 @@ void modify(int arr[])
         arr[i] = arr[i] * 3;
     }
 }
-int main(int argc, char const *argv[])
+int main( )
 {
     int arr[10];
-    printf("Enter 10 numbers:\n");
     for (int i = 0; i < 10; i++)
     {
+        printf("Enter element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
     modify(arr);
