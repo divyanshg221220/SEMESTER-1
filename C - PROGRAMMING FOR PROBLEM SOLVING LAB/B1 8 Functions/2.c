@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
         swapByReference(&a,&b);
         break;
     default:
-        printf("Invalid Input");
+        printf("Invalid Input\n");
     }
     return 0;
 }

@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
         read(filename);
         break;
     default:
-        printf("Invalid Input");
+        printf("Invalid Input\n");
         break;
     }
     return 0;

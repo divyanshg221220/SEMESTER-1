@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
         printf("Temperature in Celsius = %.2f",c);
         break;
     default:
-        printf("Invalid Input");
+        printf("Invalid Input\n");
         break;
     }
     return 0;
