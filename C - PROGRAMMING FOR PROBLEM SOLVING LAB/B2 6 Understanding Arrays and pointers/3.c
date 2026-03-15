@@ -9,7 +9,7 @@ int sumArray(int *arr, int n)
     }
     return sum;
 }
-int main()
+int main(int argc, char const *argv[])
 {
     int n;
     printf("Enter length of array: ");
