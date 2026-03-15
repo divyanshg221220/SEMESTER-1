@@ -8,7 +8,7 @@
 #define IS_UPPER_CASE(c) ((c) >= 'A' && (c) <= 'Z')
 #define IS_ALPHABET(c) (IS_LOWER_CASE(c) || IS_UPPER_CASE(c))
 #define BIGGER(a, b) ((a) >= (b) ? (a) : (b))
-main()
+int main(int argc, char const *argv[])
 {
     char c;
     int a, b;
@@ -43,4 +43,5 @@ main()
     printf("Enter second number: ");
     scanf("%d", &b);
     printf("bigger number: %d\n", BIGGER(a, b));
+    return 0;
 }
