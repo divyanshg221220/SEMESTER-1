@@ -1,7 +1,7 @@
 // Write macro definitions with arguments for calculation of area and perimeter of a triangle, a square and a circle. Store these macro definitions in a file called “areaperi.h”. Include this file in your program, and call the macro definitions for calculating area and perimeter for different squares, triangles and circles.
 #include <stdio.h>
 #include "areaperi.h"
-int main(int argc, char const *argv[])
+main()
 {
     float base, height, side1, side2, side3, side, radius;
     printf("Enter base of triangle: ");
@@ -24,5 +24,4 @@ int main(int argc, char const *argv[])
     scanf("%f", &radius);
     printf("area of circle: %.2f\n", AREA_OF_CIRCLE(radius));
     printf("perimeter of circle: %.2f\n", PERIMETER_OF_CIRCLE(radius));
-    return 0;
 }

@@ -8,7 +8,7 @@
 #define ABSOLUTE_VALUE(x) ((x) < 0 ? -(x) : (x))
 #define TO_LOWERCASE(c) (((c) >= 'A' && (c) <= 'Z') ? ((c) + ('a' - 'A')) : (c))
 #define BIGGER_OF_TWO(x, y) ((x) >= (y) ? (x) : (y))
-int main(int argc, char const *argv[])
+main()
 {
     int a, b;
     char c;
@@ -23,5 +23,4 @@ int main(int argc, char const *argv[])
     scanf(" %c", &c);
     printf("lowercase: %c\n", TO_LOWERCASE(c));
     printf("bigger: %d\n", BIGGER_OF_TWO(a, b));
-    return 0;
 }
