@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
             }
         }
     }
-    printf("prime numbers: ");
+    printf("prime numbers: \n");
     for (int i = 0; i < 100; i++)
     {
         if (num[i] != 0)
