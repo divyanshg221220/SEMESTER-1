@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < 3; j++)
         {
-            printf("Enter element [%d][%d] for matrix 1: ", i + 1, j + 1);
+            printf("Enter element [%d][%d]", i + 1, j + 1);
             scanf("%d", &matrix1[i][j]);
         }
     }
@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < 3; j++)
         {
-            printf("Enter element [%d][%d] for matrix 2: ", i + 1, j + 1);
+            printf("Enter element [%d][%d]", i + 1, j + 1);
             scanf("%d", &matrix2[i][j]);
         }
     }
