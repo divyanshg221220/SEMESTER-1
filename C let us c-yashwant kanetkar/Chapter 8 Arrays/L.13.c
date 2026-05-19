@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < 5; j++)
         {
-            printf("Enter element [%d][%d]: ", i, j);
+            printf("Enter element [%d][%d]: ", i + 1, j + 1);
             scanf("%d", &matrix[i][j]);
         }
     }

@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
             {
                 for (int j = 0; j < 6; j++)
                 {
-                    printf("Enter element [%d][%d]: ", i, j);
+                    printf("Enter element [%d][%d]: ", i + 1, j + 1);
                     scanf("%d", &a[i][j]);
                 }
             }
@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
             {
                 for (int j = 0; j < 6; j++)
                 {
-                    printf("Enter element [%d][%d]: ", i, j);
+                    printf("Enter element [%d][%d]: ", i + 1, j + 1);
                     scanf("%d", &b[i][j]);
                 }
             }
@@ -62,7 +62,7 @@ int main(int argc, char const *argv[])
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    printf("Enter element [%d][%d]: ", i, j);
+                    printf("Enter element [%d][%d]: ", i + 1, j + 1);
                     scanf("%d", &a[i][j]);
                 }
             }
@@ -71,7 +71,7 @@ int main(int argc, char const *argv[])
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    printf("Enter element [%d][%d]: ", i, j);
+                    printf("Enter element [%d][%d]: ", i + 1, j + 1);
                     scanf("%d", &b[i][j]);
                 }
             }
@@ -105,7 +105,7 @@ int main(int argc, char const *argv[])
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    printf("Enter element [%d][%d]: ", i, j);
+                    printf("Enter element [%d][%d]: ", i + 1, j + 1);
                     scanf("%d", &matrix[i][j]);
                 }
             }
@@ -146,7 +146,7 @@ int main(int argc, char const *argv[])
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    printf("Enter element [%d][%d]: ", i, j);
+                    printf("Enter element [%d][%d]: ", i + 1, j + 1);
                     scanf("%d", &matrix[i][j]);
                 }
             }
