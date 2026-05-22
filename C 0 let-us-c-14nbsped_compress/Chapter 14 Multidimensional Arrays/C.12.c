@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
             scanf("%d", &matrix[i][j]);
         }
     }
-    int det = 0;
+    int determinant = 0;
     for (int i = 0; i < 6; i++)
     {
         int sign = (i % 2 == 0) ? 1 : -1;
@@ -21,8 +21,8 @@ int main(int argc, char const *argv[])
             int k = (j + i) % 6;
             temp *= matrix[j][k];
         }
-        det += sign * temp;
+        determinant += sign * temp;
     }
-    printf("determinant: %d\n", det);
+    printf("determinant: %d\n", determinant);
     return 0;
 }
