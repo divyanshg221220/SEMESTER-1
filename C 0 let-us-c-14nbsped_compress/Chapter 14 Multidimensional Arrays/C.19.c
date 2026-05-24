@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
         {
             if (sudoku[i][j] < 1 || sudoku[i][j] > 9 || row_check[sudoku[i][j]] || col_check[sudoku[j][i]])
             {
-                printf("not correct\n");
+                printf("incorrect\n");
                 return 0;
             }
             row_check[sudoku[i][j]] = 1, col_check[sudoku[j][i]] = 1;
@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
                 {
                     if (sudoku[i][j] < 1 || sudoku[i][j] > 9 || subgrid_check[sudoku[i][j]])
                     {
-                        printf("not correct\n");
+                        printf("incorrect\n");
                         return 0;
                     }
                     subgrid_check[sudoku[i][j]] = 1;
