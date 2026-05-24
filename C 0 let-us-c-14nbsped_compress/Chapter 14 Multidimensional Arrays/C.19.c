@@ -26,18 +26,12 @@ int main(int argc, char const *argv[])
         int row_check[10] = {0}, col_check[10] = {0};
         for (int j = 0; j < 9; j++)
         {
-            if (sudoku[i][j] < 1 || sudoku[i][j] > 9 || row_check[sudoku[i][j]])
+            if (sudoku[i][j] < 1 || sudoku[i][j] > 9 || row_check[sudoku[i][j]] || col_check[sudoku[j][i]])
             {
                 printf("not correct\n");
                 return 0;
             }
-            row_check[sudoku[i][j]] = 1;
-            if (sudoku[j][i] < 1 || sudoku[j][i] > 9 || col_check[sudoku[j][i]])
-            {
-                printf("not correct\n");
-                return 0;
-            }
-            col_check[sudoku[j][i]] = 1;
+            row_check[sudoku[i][j]] = 1, col_check[sudoku[j][i]] = 1;
         }
     }
     for (int row = 0; row < 9; row += 3)
