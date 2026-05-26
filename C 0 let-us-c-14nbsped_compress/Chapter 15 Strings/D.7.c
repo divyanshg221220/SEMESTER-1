@@ -16,26 +16,26 @@ int main(int argc, char const *argv[])
     {
         scanf("%d", &card[i]);
     }
-    int sum = 0;
+    int sum1 = 0, sum2 = 0;
     for (int i = 0; i < 16; i++)
     {
         if (i % 2 == 0)
         {
             if (card[i] * 2 >= 10)
             {
-                sum += (card[i] * 2) - 9;
+                sum1 += (card[i] * 2) - 9;
             }
             else
             {
-                sum += card[i] * 2;
+                sum1 += card[i] * 2;
             }
         }
         else
         {
-            sum += card[i];
+            sum2 += card[i];
         }
     }
-    if (sum  % 10 == 0)
+    if ((sum1 + sum2) % 10 == 0)
     {
         printf("valid");
     }
