@@ -1,10 +1,9 @@
 // Write a program to reverse the strings stored in the following array of pointers to strings: 
-// char  *s[ ] = { 
+// char  *s[ ] = {  
 //                 "To err is human...",  
 //                 "But to really mess things up...",  
-//                 "One needs to know C!!" 
-//               };
-// Hint: Write a function xstrrev ( string ) which should reverse the contents of one string. Call this function for reversing each string stored in s. 
+//                 "One needs to know C!!"  
+//               } ;
 #include <stdio.h>
 #include <string.h>
 void xstrrev(char *string)
