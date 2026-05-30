@@ -24,7 +24,11 @@ int main(int argc, char const *argv[])
     char **lines[] = {line1, line2, line3, line4, line5, line6, line7, line8};
     for (int i = 0; i < 9; i++)
     {
-        printf("%s   %s   %s   %s   %s\n", lines[i][num[0] - '0'], lines[i][num[1] - '0'], lines[i][num[2] - '0'], lines[i][num[3] - '0'], lines[i][num[4] - '0']);
+        for (int j = 0; j < 5; j++)
+        {
+            printf("%s   ", lines[i][num[j] - '0']);
+        }
+        printf("\n");
     }
     return 0;
 }
