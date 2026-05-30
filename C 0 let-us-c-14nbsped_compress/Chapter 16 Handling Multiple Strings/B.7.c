@@ -1,4 +1,4 @@
-// Write a program to delete all vowels from a sentence. Assume that the sentence is not more than 80 characters long.
+// Write a program to delete all vowels from a sentence. Assume that the sentence is not more than 80 characters long. 
 #include <stdio.h>
 #include <string.h>
 int main(int argc, char const *argv[])
