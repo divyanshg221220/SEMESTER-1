@@ -1,8 +1,8 @@
 // Create a structure to specify data of customers in a bank. The data to be stored is: Account number, Name, Balance in account. Assume maximum of 200 customers in the bank. 
-// (a) Write a function to print the Account number and name of each customer with balance below Rs. 100. 
-// (b) If a customer request for withdrawal or deposit, it is given in the form: 
+// (1) Write a function to print the Account number and name of each customer with balance below Rs. 100. 
+// (2) If a customer requests for withdrawal or deposit, the form contains the fields: 
 // Acct. no, amount, code (1 for deposit, 0 for withdrawal) 
-// Write a program to give a message, “The balance is insufficient for the specified withdrawal”.
+// Write a program to give a message, “The balance is insufficient for the specified withdrawal”, if on withdrawal the balance falls below Rs. 100.
 #include <stdio.h>
 struct customers
 {
@@ -40,7 +40,7 @@ void withdrawal_deposit(struct customers c[])
             }
             else if (code == 0)
             {
-                if (c[i].balance < amount)
+                if (c[i].balance - 100 < amount)
                 {
                     printf("The balance is insufficient for the specified withdrawal\n");
                 }
