@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[])
 {
     float km;
-    printf("Enter distance between two cities (in km.): ");
+    printf("Enter distance between two cities: ");
     scanf("%f", &km);
     printf("meters: %.2f\n", km * 1000);
     printf("feet: %.2f\n", km * 3280.84);
