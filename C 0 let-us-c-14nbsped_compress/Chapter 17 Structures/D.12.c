@@ -13,23 +13,23 @@ int main(int argc, char const *argv[])
     scanf("%d", &wind_speed);
     if (wind_speed >= 74 && wind_speed <= 95)
     {
-        printf("Hurricane Category I\n");
+        printf("hurricane category I\n");
     }
     else if (wind_speed >= 96 && wind_speed <= 110)
     {
-        printf("Hurricane Category II\n");
+        printf("hurricane category II\n");
     }
     else if (wind_speed >= 111 && wind_speed <= 130)
     {
-        printf("Hurricane Category III\n");
+        printf("hurricane category III\n");
     }
     else if (wind_speed >= 131 && wind_speed <= 155)
     {
-        printf("Hurricane Category IV\n");
+        printf("hurricane category IV\n");
     }
     else if (wind_speed >= 155)
     {
-        printf("Hurricane Category V\n");
+        printf("hurricane category V\n");
     }
     return 0;
 }
