@@ -9,7 +9,7 @@ struct date
 int main(int argc, char const *argv[])
 {
     struct date doj[10];
-    printf("Enter 10 dates [DDMMYYYY]: \n");
+    printf("Enter 10 dates[DDMMYYYY]: \n");
     for (int i = 0; i < 10; i++)
     {
         int d, m, y;
