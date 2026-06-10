@@ -1,9 +1,9 @@
 // Write a function that receives 5 integers and returns the sum, average and standard deviation of these numbers. Call this function from main( ) and print the results in main( ). 
 #include <stdio.h>
 #include <math.h>
-int Sum(int arr[])
+float Sum(int arr[])
 {
-    int sum = 0;
+    float sum = 0;
     for (int i = 0; i < 5; i++)
     {
         sum += arr[i];
@@ -12,7 +12,7 @@ int Sum(int arr[])
 }
 float Average(int arr[])
 {
-    int sum = Sum(arr);
+    float sum = Sum(arr);
     float average = sum / 5;
     return average;
 }
@@ -35,7 +35,7 @@ int main( )
         printf("Enter number %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
-    printf("sum: %d\n", Sum(arr));
+    printf("sum: %.2f\n", Sum(arr));
     printf("average: %.2f\n", Average(arr));
     printf("standard deviation: %.2f\n", StandardDeviation(arr));
     return 0;
