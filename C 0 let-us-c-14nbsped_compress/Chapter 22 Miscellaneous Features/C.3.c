@@ -8,41 +8,41 @@ struct date
 };
 int main(int argc, char const *argv[])
 {
-    struct date date[10];
+    struct date doj[10];
+    printf("Enter 10 dates [DDMMYYYY]: \n");
     for (int i = 0; i < 10; i++)
     {
         int d, m, y;
-        printf("Enter date of joining for employee %d [DDMMYYYY]: ", i + 1);
         scanf("%2u%2u%4u", &d, &m, &y);
-        date[i].day = d;
-        date[i].month = m;
-        date[i].year = y;
+        doj[i].day = d;
+        doj[i].month = m;
+        doj[i].year = y;
     }
     for (int i = 0; i < 10; i++)
     {
         for (int j = i + 1; j < 10; j++)
         {
-            if (date[i].year > date[j].year)
+            if (doj[i].year > doj[j].year)
             {
-                struct date temp = date[i];
-                date[i] = date[j];
-                date[j] = temp;
+                struct date temp = doj[i];
+                doj[i] = doj[j];
+                doj[j] = temp;
             }
-            else if (date[i].year == date[j].year)
+            else if (doj[i].year == doj[j].year)
             {
-                if (date[i].month > date[j].month)
+                if (doj[i].month > doj[j].month)
                 {
-                    struct date temp = date[i];
-                    date[i] = date[j];
-                    date[j] = temp;
+                    struct date temp = doj[i];
+                    doj[i] = doj[j];
+                    doj[j] = temp;
                 }
-                else if (date[i].month == date[j].month)
+                else if (doj[i].month == doj[j].month)
                 {
-                    if (date[i].day > date[j].day)
+                    if (doj[i].day > doj[j].day)
                     {
-                        struct date temp = date[i];
-                        date[i] = date[j];
-                        date[j] = temp;
+                        struct date temp = doj[i];
+                        doj[i] = doj[j];
+                        doj[j] = temp;
                     }
                 }
             }
@@ -50,7 +50,7 @@ int main(int argc, char const *argv[])
     }
     for (int i = 0; i < 10; i++)
     {
-        printf("%02u/%02u/%04u\n", date[i].day, date[i].month, date[i].year);
+        printf("%02u/%02u/%04u\n", doj[i].day, doj[i].month, doj[i].year);
     }
     return 0;
 }
