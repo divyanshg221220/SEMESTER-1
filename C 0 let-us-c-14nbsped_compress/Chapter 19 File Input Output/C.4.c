@@ -21,7 +21,6 @@ int main(int argc, char const *argv[])
         while ((c = fgetc(fptr1)) != EOF)
         {
             fputc(toupper(c), fptr2);
-            
         }
         fclose(fptr1);
         fclose(fptr2);
