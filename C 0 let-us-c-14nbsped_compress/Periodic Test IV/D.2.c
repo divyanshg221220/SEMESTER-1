@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
                 word = strtok(NULL, " ,.\n");
             }
         }
-        printf("count: %d\n", count);
+        printf("count: %d", count);
         fclose(fptr);
     }
     return 0;
