@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
     scanf("%d", &b);
     for (int i = 0; i < 4; i++)
     {
-        printf("function %d: %f\n", i + 1, f[i](a, b));
+        printf("function %d: %.2f\n", i + 1, f[i](a, b));
     }
     return 0;
 }
