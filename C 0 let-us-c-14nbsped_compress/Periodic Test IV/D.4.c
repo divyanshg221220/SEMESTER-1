@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
                 break;
             }
         }
-        if (flag == 0 && c1 == EOF && c2 == EOF)
+        if (flag == 0)
         {
             printf("files are same");
         }
