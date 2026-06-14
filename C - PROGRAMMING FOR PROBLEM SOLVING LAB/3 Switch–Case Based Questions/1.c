@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
             printf("Multiplication is %d\n",a*b);
             break;
         case '/':
-            if(b!=0){
+            if (b!=0){
                 printf("Division is %d\n",a/b);
             }
             else{

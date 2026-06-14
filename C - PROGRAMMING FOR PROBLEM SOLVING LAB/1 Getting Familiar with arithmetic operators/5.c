@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
     printf("2. Without using third variable\n");
     printf("Enter your choice : ");
     scanf("%d",&q);
-    if(q==1)
+    if (q==1)
     {
         int a,b,temp;
         printf("Enter first number: ");
