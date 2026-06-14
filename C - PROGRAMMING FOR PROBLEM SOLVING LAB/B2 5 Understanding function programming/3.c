@@ -30,7 +30,6 @@ void swapByValue(int a,int b)
     a=b;
     b=temp;
     printf("First number: %d\nSecond number: %d",a,b);
-
 }
 void swapByReference(int *a,int *b)
 {
