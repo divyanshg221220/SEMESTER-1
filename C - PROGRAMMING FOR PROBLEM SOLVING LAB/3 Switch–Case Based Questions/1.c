@@ -12,9 +12,9 @@ int main(int argc, char const *argv[])
     scanf("%c",&q);
     if (q=='+'||q=='-'||q=='*'||q=='/')
     {
-        printf("Enter first numbers : ");
+        printf("Enter first number : ");
         scanf("%d",&a);
-        printf("Enter second numbers : ");
+        printf("Enter second number : ");
         scanf("%d",&b);
         switch (q)
         {
